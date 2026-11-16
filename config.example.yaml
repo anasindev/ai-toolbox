@@ -1,0 +1,15 @@
+# Settings read by the ai-toolbox skills.
+# Copy to ~/.config/ai-toolbox/config.yaml (global), or to .ai-toolbox.yaml
+# at a repo root to override it for that repo. Keep real values out of this repo.
+
+jira:
+  cloudId: your-site.atlassian.net   # site URL or cloud id, for the Atlassian MCP
+  defaultProject: PROJ               # project used by jira-create-bug when none is named
+  readyStatus: Ready                 # status a planned subtask is moved to
+
+git:
+  storyBranch: feature/{KEY}         # {KEY} = Story key, used by jira-dev-story
+  bugBranch: bug/{KEY}               # {KEY} = Bug key, used by jira-dev-bug
+
+vault:
+  path: ~/notes/vault                # Obsidian vault for capture-learnings (optional elsewhere)
