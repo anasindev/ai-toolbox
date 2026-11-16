@@ -22,6 +22,7 @@ A repo can override the global config with its own `.ai-toolbox.yaml` at its roo
 - **jira-dev-story.** `/jira-dev-story KEY`: implements those subtasks, TDD, one commit each.
 - **jira-dev-bug.** `/jira-dev-bug KEY`: root cause, argued fix, regression test, one commit.
 - **jira-create-bug.** Writes a Jira Bug a PM or QA can reproduce without reading code.
+- **sentry-analyzer.** `/sentry-analyzer ISSUE`: root cause of a Sentry issue and 3 ways to fix it. Needs the Sentry MCP.
 
 The `jira-*` skills expect the Atlassian MCP to be connected. Repo-specific things (test commands, commit convention, domain skills) are read from the repo's `AGENTS.md`.
 

@@ -10,7 +10,7 @@ The ticket is read by a product manager, a QA or a developer of another team. Th
 ## Before writing
 
 1. Load the `writing-for-humans` skill. Its rules apply: English, no em dash, no semicolon, no two-column table, conclusion first, about 150 words outside the steps.
-2. Reuse what the conversation already holds. After an investigation (a Sentry analysis, a log dig), take the Sentry link, count, first-seen date, example id, root cause and `path:line` from it, and do not fetch them again. If the user picked one of the proposed fixes, the "Suggested fix" is that one, not your own recommendation. If something is still missing, find it yourself before asking:
+2. Reuse what the conversation already holds. After an investigation (a `/sentry-analyzer` run, a log dig), take the Sentry link, count, first-seen date, example id, root cause and `path:line` from it, and do not fetch them again. If the user picked one of the proposed fixes, the "Suggested fix" is that one, not your own recommendation. If something is still missing, find it yourself before asking:
    - **Who** is blocked (which user role) and **on which screen**.
    - **Which data** triggers it (an origin, a status, a country, a flag). Find it in the code, not by guessing.
    - **A real example** from Sentry, Datadog or the user (an id, a URL).
